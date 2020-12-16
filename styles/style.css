@@ -6,7 +6,8 @@
 }
 
 html {
-  font-size: 56%;
+  font-size: 50%;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -174,13 +175,161 @@ nav ul {
 .intro-images {
   flex: 1 1 40rem;
 }*/
-/*# sourceMappingURL=style.css.map */
+.projects {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 
-/*** when i use this font, All design gets messed up. I have to fix this issue ***/
+.projects h2 {
+  margin: 5rem;
+}
 
-/*body {
+.projects img {
+  border-radius: 25px;
+  -webkit-box-shadow: 10px 8px 6px #858383;
+  box-shadow: 10px 8px 6px #858383;
+}
+
+.travelly,
+.photography {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
+}
+
+.form-section {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.form-section form {
+  padding: 3rem 10rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2),
+    0px 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+}
+
+.form-section input,
+.form-section textarea {
+  margin: 1.8rem;
+  resize: none;
+  overflow: hidden !important;
+}
+
+.form-section input:focus,
+.form-section textarea:focus {
+  outline: 2px solid black;
+}
+
+.form-section textarea {
   font-family: "Montserrat", sans-serif;
-}*/
+  font-size: 2rem;
+}
+
+.form-section button {
+  width: 100%;
+  padding: 2rem;
+  background: #154353;
+  color: white;
+}
+
+.form-section button:focus {
+  background: #33696b;
+}
+
+footer {
+  background: #154353;
+  color: white;
+  min-height: 10vh;
+  padding: 0% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+footer ul {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+footer h4 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
+}
+
+footer img {
+  width: 4rem;
+}
+
 .active {
   background: #2c2c2c;
   color: white;
@@ -189,44 +338,92 @@ nav ul {
 }
 
 #leaf-left {
+  -webkit-animation: plant 1.5s ease infinite alternate;
   animation: plant 1.5s ease infinite alternate;
 }
+
 #leaf-right {
+  -webkit-animation: plant 1.5s ease infinite alternate 0.5s;
   animation: plant 1.5s ease infinite alternate 0.5s;
 }
+
 #me {
+  -webkit-animation: me 1s ease infinite alternate;
   animation: me 1s ease infinite alternate;
+  -webkit-transform-origin: bottom;
   transform-origin: bottom;
 }
+
 #arrow {
+  -webkit-animation: clock 1.5s infinite linear;
   animation: clock 1.5s infinite linear;
   transform-box: fill-box;
+  -webkit-transform-origin: bottom;
   transform-origin: bottom;
+}
+
+@-webkit-keyframes me {
+  from {
+    -webkit-transform: rotateZ(-5deg);
+    transform: rotateZ(-5deg);
+  }
+  to {
+    -webkit-transform: rotateZ(5deg);
+    transform: rotateZ(5deg);
+  }
 }
 
 @keyframes me {
   from {
+    -webkit-transform: rotateZ(-5deg);
     transform: rotateZ(-5deg);
   }
   to {
+    -webkit-transform: rotateZ(5deg);
     transform: rotateZ(5deg);
+  }
+}
+
+@-webkit-keyframes plant {
+  from {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(-30%);
+    transform: translateY(-30%);
   }
 }
 
 @keyframes plant {
   from {
+    -webkit-transform: translateY(0%);
     transform: translateY(0%);
   }
   to {
+    -webkit-transform: translateY(-30%);
     transform: translateY(-30%);
+  }
+}
+
+@-webkit-keyframes clock {
+  from {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 }
 
 @keyframes clock {
   from {
+    -webkit-transform: rotateZ(0deg);
     transform: rotateZ(0deg);
   }
   to {
+    -webkit-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
   }
 }
@@ -258,12 +455,23 @@ nav ul {
   }
   nav #logo {
     margin-top: 2rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 20rem;
     flex: 1 1 20rem;
   }
   nav ul {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 60rem;
     flex: 1 1 60rem;
     margin: 2rem 0rem;
   }
@@ -272,8 +480,15 @@ nav ul {
     text-align: center;
   }
   .intro-social {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
   .intro-images {
@@ -282,4 +497,9 @@ nav ul {
   .intro-social a {
     margin: 2rem;
   }
+  form {
+    padding: 0rem;
+    width: 100%;
+  }
 }
+/*# sourceMappingURL=style.css.map */
