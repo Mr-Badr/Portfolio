@@ -30,6 +30,20 @@ html {
   padding: 1rem 3rem;
   border-radius: 2rem;
 }
+.intro {
+  h2 {
+    background: linear-gradient(
+      90deg,
+      rgba(56, 211, 159, 1) 0%,
+      rgba(56, 164, 211, 1) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+}
 
 #leaf-left {
   animation: plant 1.5s ease infinite alternate;
@@ -127,6 +141,6 @@ html {
   }
   form {
     padding: 0rem;
-    width: 100%;
+    width: 80%;
   }
 }
